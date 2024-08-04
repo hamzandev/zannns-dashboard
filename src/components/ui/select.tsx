@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 import { IconChevronLgDown } from '@irsyadadl/paranoid'
-import type { Placement } from '@react-types/overlays'
+// import type { Placement } from '@react-types/overlays'
 import {
   Button,
   composeRenderProps,
@@ -41,7 +41,7 @@ interface SelectProps<T extends object> extends Omit<SelectPrimitiveProps<T>, 'c
   errorMessage?: string | ((validation: ValidationResult) => string)
   items?: Iterable<T>
   children: React.ReactNode | ((item: T) => React.ReactNode)
-  placement?: Placement
+  placement?: any
   prefix?: React.ReactNode
   className?: string
 }
